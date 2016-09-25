@@ -10,6 +10,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('home');
   this.route('not-found', { path: '/*path' });
+  this.route('directions');
+  this.route('places-to-eat');
+  this.route('things-to-see');
 });
 
 export default Router;
