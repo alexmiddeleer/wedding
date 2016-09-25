@@ -1,3 +1,4 @@
+// jscs:disable disallowDirectPropertyAccess
 import Ember from 'ember';
 import config from './config/environment';
 
@@ -7,6 +8,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('not-found', { path: '/*path' });
 });
 
 export default Router;

@@ -1,0 +1,18 @@
+.home {
+   .person {
+      margin-bottom:10px;
+      border: 1px solid black;
+
+      .headshot {
+         width:100px;
+         display:inline-block;
+         vertical-align:top;
+      }
+
+      .details{
+         padding:10px 0px 0px 10px;
+         display:inline-block;
+         vertical-align:top;
+      }
+   }
+}
