@@ -13,6 +13,8 @@ Router.map(function() {
   this.route('directions');
   this.route('places-to-eat');
   this.route('things-to-see');
+  this.route('places-to-stay');
+  this.route('bio');
 });
 
 export default Router;
