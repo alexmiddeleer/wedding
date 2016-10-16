@@ -17,12 +17,12 @@ test('it should show a welcome message', function(assert) {
   });
 });
 
-test('it should show contact info', function(assert) {
-  visit('/');
-  andThen(function() {
-    assert.equal(find('.contact-info').length, 1);
-    assert.equal(find('.contact-info .facebook').length, 2);
-    assert.equal(find('.contact-info .phone').length, 2);
-    assert.equal(find('.contact-info .email').length, 2);
-  });
-});
+// test('it should show contact info', function(assert) {
+//   visit('/');
+//   andThen(function() {
+//     assert.equal(find('.contact-info').length, 1);
+//     assert.equal(find('.contact-info .facebook').length, 2);
+//     assert.equal(find('.contact-info .phone').length, 2);
+//     assert.equal(find('.contact-info .email').length, 2);
+//   });
+// });
