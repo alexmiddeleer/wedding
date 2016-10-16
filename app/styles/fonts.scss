@@ -1,0 +1,23 @@
+@import 'https://fonts.googleapis.com/css?family=Lato|Raleway|Yanone+Kaffeesatz';
+
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+$body-font: 'Lato', sans-serif;
+$body-font-size: 14pt;
+$nav-bar-font-size: $body-font-size;
+
+$header-font: 'Raleway', sans-serif;
+
+
+body {
+  font-family: $body-font;
+  font-size: $body-font-size;
+
+  h1, h2, h3, h4, h5 {
+    font-family: $header-font;
+  }
+
+  .nav-bar {
+    font-size: $nav-bar-font-size;
+  }
+}
