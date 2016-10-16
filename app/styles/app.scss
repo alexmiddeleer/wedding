@@ -62,9 +62,19 @@ body {
     }
   }
 
-}
+  .credit {
+    margin-top: 15px;
+    float: right;
+  }
 
-.headliner-image{
-  text-align: center;
-  margin: 20px 0px;
+  .headliner-image {
+    text-align: center;
+  }
+
+  .route-content {
+    background-color: $off-white-pink;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0px;
+  }
 }

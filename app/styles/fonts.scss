@@ -11,6 +11,8 @@ $bottom-bar-font-size: 12pt;
 $body-font: 'Lato', sans-serif;
 $header-font: 'Raleway', sans-serif;
 
+$fine-print-font-size: 8pt;
+
 
 body {
   font-family: $body-font;
@@ -24,4 +26,8 @@ body {
   .nav-bar {
     font-size: $nav-bar-font-size;
   }
+}
+
+.fine-print {
+  font-size: $fine-print-font-size;
 }
