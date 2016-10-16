@@ -1,7 +1,11 @@
-$app-background: #F3E5E5;
+$cranberry: #590212;
+$off-white: #F7F5EB;
+$off-white-pink: #F3E5E5;
+
+$app-background: $off-white-pink;
 $address-background: $app-background;
 
-$app-frame-color: #590212;
-$app-content-background-color: #F7F5EB;
+$app-frame-color: $cranberry;
+$app-content-background-color: $off-white;
 
-$body-font-color: #590212;
+$body-font-color: $cranberry;
