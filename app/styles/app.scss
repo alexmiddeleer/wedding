@@ -7,14 +7,23 @@
 
 html {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 750px;
   background-color: $app-background;
 }
 
 body {
-  background-color: white;
-  border-radius: 20px;
-  padding:20px;
+  .frame {
+    height:100%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $app-frame-color;
+    .content {
+      padding: 40px;
+      border-radius: 10px;
+      background-color: $app-content-background-color;
+    }
+  }
+  padding:0px 20px 20px 20px;
 
   .nav-bar {
     span {
