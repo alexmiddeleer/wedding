@@ -15,6 +15,8 @@ Router.map(function() {
   this.route('things-to-see');
   this.route('places-to-stay');
   this.route('bio');
+  this.route('registry');
+  this.route('event-info');
 });
 
 export default Router;

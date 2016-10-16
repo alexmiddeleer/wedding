@@ -26,10 +26,17 @@ body {
   padding:0px 20px 20px 20px;
 
   .nav-bar {
+    text-align: center;
     span {
       padding: 5px;
       display: inline-block;
       white-space: nowrap;
+      i, a {
+        vertical-align: middle;
+      }
+      i {
+        margin-right: 5px;
+      }
     }
   }
 
@@ -37,4 +44,5 @@ body {
 
 .headliner-image{
   text-align: center;
+  margin: 20px 0px;
 }
