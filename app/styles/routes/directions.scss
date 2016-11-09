@@ -1,7 +1,19 @@
 @import '../colors';
 
+.content-title {
+  position: absolute;
+}
+
+.content-subheader {
+  margin-top: 40px;
+}
+
 .address {
   padding: 10px;
   background-color: $white;
   border-radius: 5px;
+}
+
+.headliner-image img{
+  width: 400px;
 }

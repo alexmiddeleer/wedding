@@ -16,6 +16,8 @@ html {
 }
 
 body {
+  padding: 0px 20px 20px 20px;
+
   .title {
     text-align: center;
     margin-bottom: 10px;
@@ -30,7 +32,6 @@ body {
     /* border-radius: 10px; */
     background-color: $app-content-background-color;
   }
-  padding:0px 20px 20px 20px;
 
   .nav-bar {
     text-align: center;
@@ -78,7 +79,7 @@ body {
 
   .route-content {
     background-color: $off-white-pink;
-    padding: 10px 40px 20px 40px;
+    padding: 40px 40px 20px 40px;
     margin: 20px 0px;
   }
 }
