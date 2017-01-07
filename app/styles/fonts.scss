@@ -7,6 +7,7 @@
   /* $body-font: 'Georgia', serif; */
 
 $body-font-size: 14pt;
+$body-line-height: 20pt;
 $nav-bar-font-size: 12pt;
 $bottom-bar-font-size: 12pt;
 $fine-print-font-size: 8pt;
@@ -18,6 +19,7 @@ $header-font: 'Raleway', sans-serif;
 body {
   font-family: $body-font;
   font-size: $body-font-size;
+  line-height: $body-line-height;
   color: $body-font-color;
 
   h1, h2, h3, h4, h5 {
