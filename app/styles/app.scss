@@ -26,6 +26,9 @@ body {
     height:100%;
     border: 5px solid $app-frame-color;
     padding: 40px;
+    @media (max-width: 750px) {
+      padding: 10px;
+    }
     border-radius: 10px;
     background-color: $app-content-background-color;
     h1, h2, h3, h4, h5 {
@@ -35,6 +38,9 @@ body {
     }
   }
   padding:0px 20px 20px 20px;
+  @media (max-width: 750px){
+    padding: 0px;
+  }
 
   .nav-bar {
     text-align: center;
@@ -83,5 +89,14 @@ body {
   .route-content {
     background-color: $off-white;
     padding: 10px 40px 20px 40px;
+    @media (max-width: 750px) {
+      padding: 10px 10px 20px 10px;
+    }
+  }
+
+  @media (max-width:750px) {
+    ul {
+      padding-left: 10px;
+    }
   }
 }

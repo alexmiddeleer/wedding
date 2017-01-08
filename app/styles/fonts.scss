@@ -7,6 +7,7 @@
   /* $body-font: 'Georgia', serif; */
 
 $body-font-size: 14pt;
+$body-font-size-phone: 10pt;
 $body-line-height: 20pt;
 $nav-bar-font-size: 12pt;
 $bottom-bar-font-size: 12pt;
@@ -19,6 +20,10 @@ $header-font: 'Raleway', sans-serif;
 body {
   font-family: $body-font;
   font-size: $body-font-size;
+  @media (max-width: 750px){
+    font-size: $body-font-size-phone;
+  }
+
   line-height: $body-line-height;
   color: $body-font-color;
 
@@ -33,4 +38,22 @@ body {
 
 .fine-print {
   font-size: $fine-print-font-size;
+}
+
+@media (max-width:750px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  h5 {
+    font-size: 1.0em;
+  }
 }
