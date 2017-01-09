@@ -1,1 +1,8 @@
-{{daysLeft}} days {{hoursLeft}} hours {{minutesLeft}} minutes and {{secondsLeft}} seconds
+{{#if daysLeft}}
+  {{daysLeft}} days,
+{{/if}}
+{{#if hoursLeft}}
+  {{hoursLeft}} hours,
+{{/if}}
+{{minutesLeft}} minutes
+and {{secondsLeft}} seconds
