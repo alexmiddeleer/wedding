@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 const { Service, set, get } = Ember;
-const dateOfWedding = new Date('2017-10-28:17:00');
+const dateOfWedding = new Date('2017-10-28T17:00:00-04:00');
 
 export default Service.extend({
   daysLeft: 0,
