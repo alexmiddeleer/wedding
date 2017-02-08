@@ -12,7 +12,7 @@
 
 html {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 850px;
   background-color: $app-background;
 }
 
@@ -24,12 +24,12 @@ body {
 
   .content {
     height:100%;
-    border: 5px solid $app-frame-color;
+    border: 1px solid $app-frame-color;
     padding: 40px;
     @media (max-width: 750px) {
       padding: 10px;
     }
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: $app-content-background-color;
     h1, h2, h3, h4, h5 {
       .title-abut-icon, i {
@@ -43,7 +43,13 @@ body {
   }
 
   .nav-bar {
+    margin: 50px 0 30px;
     text-align: center;
+
+    @media (max-width: 750px){
+      margin: 20px 0 15px;
+    }
+
     span {
       padding: 5px;
       display: inline-block;
@@ -58,6 +64,7 @@ body {
   }
 
   .bottom-bar {
+    margin-top:15px;
     .facebook-image {
       vertical-align: middle;
       height: 20px;
@@ -78,7 +85,6 @@ body {
   }
 
   .credit {
-    margin-top: 15px;
     float: right;
   }
 
@@ -87,10 +93,17 @@ body {
   }
 
   .route-content {
-    background-color: $off-white;
+    background-color: $app-content-background-color;
     padding: 10px 40px 20px 40px;
     @media (max-width: 750px) {
       padding: 10px 10px 20px 10px;
+    }
+
+    h1:first-of-type {
+      margin: 0 0 40px 0;
+      @media (max-width: 750px) {
+        margin: 0 0 20px 0;
+      }
     }
   }
 
