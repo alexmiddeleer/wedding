@@ -14,33 +14,16 @@ html {
   margin: 0 auto;
   max-width: 850px;
   background-color: $app-background;
+  position: relative;
 }
 
 body {
   .title {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0 0 10px;
   }
 
-  .content {
-    height:100%;
-    border: 1px solid $app-frame-color;
-    padding: 40px;
-    @media (max-width: 750px) {
-      padding: 10px;
-    }
-    border-radius: 5px;
-    background-color: $app-content-background-color;
-    h1, h2, h3, h4, h5 {
-      .title-abut-icon, i {
-        vertical-align: middle;
-      }
-    }
-  }
-  padding:0px 20px 20px 20px;
-  @media (max-width: 750px){
-    padding: 0px;
-  }
+  padding-bottom: 20px;
 
   .nav-bar {
     margin: 50px 0 30px;
@@ -92,11 +75,22 @@ body {
     text-align: center;
   }
 
-  .route-content {
-    background-color: $app-content-background-color;
-    padding: 10px 40px 20px 40px;
+  .content {
     @media (max-width: 750px) {
-      padding: 10px 10px 20px 10px;
+      padding: 10px;
+    }
+    border: 1px solid $app-frame-color;
+    border-radius: 5px;
+    background-color: $app-content-background-color;
+    padding: 40px 40px 20px;
+    @media (max-width: 750px) {
+      padding: 10px 10px 10px 10px;
+    }
+
+    h1, h2, h3, h4, h5 {
+      .title-abut-icon, i {
+        vertical-align: middle;
+      }
     }
 
     h1:first-of-type {
