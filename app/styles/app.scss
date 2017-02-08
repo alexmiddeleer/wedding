@@ -17,6 +17,17 @@ html {
   position: relative;
 }
 
+.loading.no-ember {
+  text-align: center;
+  img {
+    width: 50vw;
+  }
+}
+
+.ember-application .loading.no-ember {
+  display: none;
+}
+
 body {
   .title {
     text-align: center;
