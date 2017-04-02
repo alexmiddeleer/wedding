@@ -151,4 +151,14 @@ body {
     background-color: transparent;
     color: black;
   }
+
+  .not-found {
+    text-align: center;
+
+    img {
+      min-height: 400px;
+      max-width: 50vw;
+      max-height: 50vh;
+    }
+  }
 }
