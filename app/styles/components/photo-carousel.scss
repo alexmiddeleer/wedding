@@ -25,7 +25,7 @@
       overflow: visible;
       padding: 0;
       background-color: transparent;
-      color: white
+      color: lightgray;
     }
   }
 
@@ -38,12 +38,12 @@
         display: inline-block;
         height: 24px;
         width: 24px;
-        color: white;
+        color: lightgray;
         * {
           vertical-align: top;
         }
         a:visited {
-          color: white;
+          color: lightgray;
         }
       }
     }
