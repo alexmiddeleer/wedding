@@ -3,5 +3,5 @@ const { Component } = Ember;
 
 export default Component.extend({
   tagName: 'i',
-  classNames: ['material-icons']
+  classNames: ['material-icons', 'wedding-icon']
 });
