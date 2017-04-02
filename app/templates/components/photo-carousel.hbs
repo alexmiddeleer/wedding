@@ -1,0 +1,16 @@
+<div class="top-bar mobile-only">
+  <button class="close">
+    {{#link-to backRoute}} <span>{{wedding-icon name="clear"}}</span>{{/link-to}}
+  </button>
+</div>
+<div class="frame" onclick={{action "next"}}>
+  <img src={{imgSrc}} alt="wedding_carousel_image">
+</div>
+<div class="toolbar">
+  <button class="previous" {{action "previous"}}>
+    <span>{{wedding-icon name="navigate_before"}}</span>
+  </button>
+  <button class="next" {{action "next"}}>
+    <span>{{wedding-icon name="navigate_next"}}</span>
+  </button>
+</div>

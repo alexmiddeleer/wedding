@@ -17,6 +17,8 @@ Router.map(function() {
   this.route('bio');
   this.route('registry');
   this.route('event-info');
+  this.route('test');
+  this.route('photo-carousel');
 });
 
 export default Router;

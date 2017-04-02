@@ -9,6 +9,7 @@
 @import 'routes/things-to-see';
 
 @import 'components/facebook-link';
+@import 'components/photo-carousel';
 
 html {
   margin: 0 auto;
@@ -29,12 +30,18 @@ html {
 }
 
 body {
+  margin: 0;
+
+  .container {
+    display: block;
+    padding-bottom: 20px;
+    margin: 8px;
+  }
+
   .title {
     text-align: center;
     margin-bottom: 0 0 10px;
   }
-
-  padding-bottom: 20px;
 
   .nav-bar {
     margin: 50px 0 30px;
@@ -116,5 +123,33 @@ body {
     ul {
       padding-left: 10px;
     }
+  }
+
+  .mobile-only {
+    display: none;
+
+    @media (max-width:750px) {
+      display: initial;
+    }
+  }
+
+  .desktop-only {
+    display: initial;
+
+    @media (max-width:750px) {
+      display: none;
+    }
+  }
+
+  button {
+    background: none;
+    border: 0;
+    color: black;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    background-color: transparent;
+    color: black;
   }
 }
