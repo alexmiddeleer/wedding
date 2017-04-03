@@ -1,5 +1,9 @@
 @import '../colors';
 
+.headliner-image img{
+  max-width: 75%;
+}
+
 .address {
   padding: 10px;
   background-color: $white;
