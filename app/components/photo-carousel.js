@@ -3,30 +3,28 @@ import { task } from 'ember-concurrency';
 
 const { set, get, computed, Component, RSVP: { defer } } = Ember;
 
-const PHOTOS_DIR = 'images/carousel';
-
 const DELAY_MS = 5000;
 
 const PHOTOS = [
-  '2008_4_Museum of Natural History.jpg',
-  '2008_9_Vassar.jpg',
-  '2009_12_EP Birthday.jpg',
-  '2010_12_Christmas.jpg',
-  '2010_5_Bronx Zoo.jpg',
-  '2010_5_Charleston Aquarium.jpg',
-  '2010_5_Middleton Place.JPG',
-  '2010_9_Vassar Convocation.jpg',
-  '2011_12_EP Birthday.jpg',
-  '2011_7_Bronx Zoo.jpg',
-  '2013_5_Tufts Graduation.jpg',
-  '2013_5_Versailles.jpg',
-  '2015_5_Acadia National Park.jpg',
-  '2015_8_Block Island.jpg',
-  '2015_9_Charleston Aquarium.jpg',
-  '2016_10_San Francisco.jpg',
-  '2016_7_Block Island.jpg',
-  'alex-elizabeth-vassar.jpg',
-  '2016_9_Napa.jpg'
+  'images/carousel/alex-elizabeth-vassar.jpg',
+  'images/carousel/2008_4_Museum of Natural History.jpg',
+  'images/carousel/2008_9_Vassar.jpg',
+  'images/carousel/2009_12_EP Birthday.jpg',
+  'images/carousel/2010_12_Christmas.jpg',
+  'images/carousel/2010_5_Bronx Zoo.jpg',
+  'images/carousel/2010_5_Charleston Aquarium.jpg',
+  'images/carousel/2010_5_Middleton Place.jpg',
+  'images/carousel/2010_9_Vassar Convocation.jpg',
+  'images/carousel/2011_12_EP Birthday.jpg',
+  'images/carousel/2011_7_Bronx Zoo.jpg',
+  'images/carousel/2013_5_Tufts Graduation.jpg',
+  'images/carousel/2013_5_Versailles.jpg',
+  'images/carousel/2015_5_Acadia National Park.jpg',
+  'images/carousel/2015_8_Block Island.jpg',
+  'images/carousel/2015_9_Charleston Aquarium.jpg',
+  'images/carousel/2016_7_Block Island.jpg',
+  'images/carousel/2016_9_Napa.jpg',
+  'images/carousel/2016_10_San Francisco.jpg'
 ];
 
 export default Component.extend({
@@ -34,7 +32,7 @@ export default Component.extend({
   imgIdx: -1,
 
   imgSrc: computed('imgIdx', function() {
-    return `${PHOTOS_DIR}/${PHOTOS[get(this, 'imgIdx')]}`;
+    return `${PHOTOS[get(this, 'imgIdx')]}`;
   }),
 
   carouselDelay() {
