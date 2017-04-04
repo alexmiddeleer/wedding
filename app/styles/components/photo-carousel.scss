@@ -1,6 +1,6 @@
 .photo-carousel {
   .frame {
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     text-align: center;
     padding: 40px;
     padding-bottom: 0px;
@@ -11,7 +11,7 @@
   }
 
   .toolbar {
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
     .next,.previous {
@@ -31,15 +31,18 @@
 
   @media (max-width: 750px) {
     .top-bar {
+      position: absolute;
       margin: 10px;
-      height: 24px;
       display: flex;
       .close {
         display: inline-block;
-        height: 24px;
-        width: 24px;
+        background-color: rgba(57, 70, 78, 0.65);
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
         color: lightgray;
         * {
+          line-height: 24px;
           vertical-align: top;
         }
         a:visited {
@@ -61,21 +64,39 @@
       align-content: center;
       justify-content: center;
       padding: 0;
-      height: 80vh;
+      height: 100vh;
       overflow: hidden;
       img {
         display:inline-block;
         height: auto;
-        max-height: 80vh;
+        max-height: 100vh;
         max-width: 100vw;
       }
     }
 
     .toolbar {
-      background-color: black;
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      height: 30px;
+      width: 100%;
+      background-color: transparent;
       padding: 0;
       .next,.previous {
+        width: 30px;
+        border-radius: 30px;
+        background-color: rgba(57, 70, 78, 0.65);
         color: lightgray;
+        display: inline block;
+        * {
+          line-height: 30px;
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+      }
+
+      .spacer {
+        flex-grow: 1;
       }
     }
   }
