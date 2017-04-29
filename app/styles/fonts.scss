@@ -7,7 +7,7 @@
   /* $body-font: 'Georgia', serif; */
 
 $body-font-size: 14pt;
-$body-font-size-phone: 10pt;
+$body-font-size-phone: 13pt;
 $body-line-height: 20pt;
 $nav-bar-font-size: 12pt;
 $bottom-bar-font-size: 12pt;
@@ -29,6 +29,9 @@ body {
 
   h1, h2, h3, h4, h5 {
     font-family: $header-font;
+    @media (max-width:750px) {
+      text-align: center;
+    }
   }
 
   .nav-bar {
