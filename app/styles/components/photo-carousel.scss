@@ -37,9 +37,9 @@
       .close {
         display: inline-block;
         background-color: rgba(57, 70, 78, 0.65);
-        height: 40px;
-        width: 40px;
-        border-radius: 40px;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
         color: lightgray;
         * {
           line-height: 24px;
@@ -50,6 +50,7 @@
         }
       }
     }
+
     background-color: black;
     position: absolute;
     height: 100vh;
